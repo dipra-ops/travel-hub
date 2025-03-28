@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* COMMON ELEMENTS */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .cta,
+  .cta:visited {
+    padding: 8px 15px;
+    color: rgb(10, 0, 0);
+    background: #ffd300;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  
+  .cta:hover,
+  .cta:active {
+    color: #ffd300;
+    background: transparent;
+    border: 2px solid #ffd300;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.45);
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* COMMON EELEMENTS END */
+  
+  /* NAVIGATION */
+  
+  .navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(5, 0, 0);
+    
+  }
+  
+  .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .logo span {
+    color: #ffd700;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .nav_links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav_links li {
+    margin: 0 30px;
+  }
+  
+  .nav_links li a {
+    color: rgb(10, 0, 0);
+    transition: all 0.3s;
+    font-weight: 700;
+  }
+  
+  .nav_links li a:hover {
+    color: #ffd700;
+  }
+  
+  .menu_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    display: none;
+    pointer-events: none;
+  }
+  
+  /* HEADER */
+  header {
+    height: 100vh;
+    width: 100%;
+    background: url("image/eiffel-tower-france-city-at-night-5k-yn.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .header_content {
+    color: whitesmoke;
+    margin-bottom: 150px;
+    text-align: center;
+  }
+  
+  .header_content h2 {
+    text-transform: capitalize;
+    font-size: 4vmin;
+  }
+  
+  .header_content h1 {
+    font-size: 7vmin;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  .line {
+    width: 150px;
+    height: 4px;
+    background: #ffd700;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  /* UPCOMING EVENTS SECTION */
+  
+  .events {
+    width: 80%;
+    margin: 80px auto;
+  }
+  
+  .up_events {
+    width: 450px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #484872;
+  }
+  
+  .events .col {
+    margin-top: 50px;
+  }
+  
+  h4 {
+    font-size: 3vmin;
+    margin: 20px auto;
+  }
+  
+  p {
+    color: #7c7c7c;
+    padding: 0 40px;
+  }
+  
+  .events .cta {
+    margin-top: 30px;
+  }
+  
+  /* UPCOMING EVENTS SECTION End*/
+  
+  /* EXPLORE THE WORLD SECTION */
+  
+  .explore {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(29, 33, 33, 0.5), rgba(46, 47, 45, 0.012)),url("image/Japan-Travel-Wallpaper-HD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  
+  .explore_content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore_content h1{
+    font-size: 70px;
+    font-weight: 800;
+    color: rgb(252, 249, 249);
+    text-transform: uppercase;
+  }
+  
+  .explore_content .line{
+    margin-bottom: 50px;
+  }
+  
+  .explore_content p{
+    color: #fefdfdeb;+
+    font-weight: 400;
+  }
+  
+  .explore_content .cta{
+    margin-top: 40px;
+  }
+  
+  /* EXPLORE THE WORLD SECTION END*/
+  
+  
+  /* UPCOMING TOURS SECTION */
+  
+  .img_gallery img{
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  .tours{
+    margin: 100px 0;
+    padding: 0 40px;
+  }
+  
+  .img_col{
+    width: 55%;
+  }
+  
+  .content_col{
+    width: 45%;
+  }
+  
+  .img_gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .tours .row{
+    gap: 20px;
+  }
+  
+  .content_col h1{
+    font-size: 7vmin;
+    color: #484872;
+    text-transform: uppercase;
+  }
+  
+  
+  .content_col .line{
+    margin-left: -1px;
+  }
+  
+  .content_col p{
+    padding: 0;
+    margin: 30px auto;
+  }
+  
+  .content_col .cta{
+    margin-left: -100px;
+  }
+  
+  
+  /* UPCOMING TOURS SECTION END */
+  
+  
+  /* FOOTER */
+  
+  .footer{
+    background: #080000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col1,.footer-col2,.footer-col3,.footer-col4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col3,.footer-col4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer li{
+    display: block;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin:  20px 0;
+}
+.copyright{
+    text-align: center;
+    
+}
+
+  
+  /* MOBILE DISPLAY */
+  
+  @media only screen and (max-width: 850px) {
+    .menu_btn {
+      display: block;
+      pointer-events: all;
+    }
+    .navbar {
+      padding: 0;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  
+    .nav_links {
+      height: 100vh;
+      width: 100%;
+      background: #6fa9b4;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -1200px;
+      transition: all 0.5s;
+    }
+  
+    .mobile_menu {
+      margin: 0;
+      border-bottom-right-radius: 30%;
+    }
+  
+    .nav_links li {
+      margin: 30px auto;
+    }
+  
+    /* Evenets */
+    .row{
+      flex-direction: column;
+    }
+  
+    .col img{
+      max-width: 90%;
+    }
+  
+    .row .col{
+      margin: 20px auto;
+    }
+  
+    /* Explore section */
+    .explore_content{
+      width: 100%;
+      text-align: center;
+    }
+  
+    .explore{
+      background-position: top center;
+    }
+  
+    /* Upcoming Tours */
+  
+    .tours .col{
+      width: 100%;
+    }
+  
+    .img_gallery{
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .img_gallery img{
+      width: 90%;
+    }
+  
+    .content_col{
+      text-align: center;
+      width: 90%;
+    }
+  
+    .content_col .line{
+      margin: 10px auto;
+    }
+  
+    .content_col .cta{
+      margin: 20px auto;
+    }
+  
+    footer{
+      padding: 20px;
+    }
+  }
